@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/current-score-apple.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gameLogo"><img src="images/snake-game-logo.png" alt="Snake game logo"></div>
+    
+    <div class="scores">
+        <div class="current-score"><img src="images/current-score-apple.png" alt=""><span class="current-value">0</span></div>
+        <div class="high-score"><img src="images/high-score-star.png" alt=""><span class="high-value">0</span></div>
+    </div>
+            
+    <canvas id="canvas" width="400px" height="400px">
+        
+    </canvas>
+
+        <div class="game-over">
+            <span class="massage"><img src="images/gameover-logo.png" alt=""></span>
+            <span class="game-over-score">
+                <div class="finalCurrent-score"><img src="images/current-score-apple.png" alt=""><span class="current-value">0</span></div>
+                <div class="finalHigh-score"><img src="images/high-score-star.png" alt=""><span class="high-value">0</span></div>
+            </span>
+            <button class="tryAgain_button">Try Again!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html

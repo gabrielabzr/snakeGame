@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --lines: #4fad0a;
+    --menu-backgrond: #c7e162;
+    --game-background: #cce370;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #067B06, #4fad0a);
+    color: var(--lines);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color:var(--menu-backgrond);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    border: 2px solid var(--lines);
+    border-radius: 0.45em;
+}
+
+.container .gameLogo img {
+    width: 9.5em;
+    position: center;
+}
+
+.container .scores {
+    display: flex;
+    flex-direction: row;
+    gap: 14em;
+}
+
+.container .scores img {
+    width: 50px;
+}
+
+.container .scores .current-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .scores .current-value {
+    font-size: 1.5em;
+    color: var(--lines)
+}
+
+.container .high-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .high-value {
+    font-size: 1.5em;
+    color: var(--lines);
+}
+
+canvas {
+    background-color: var(--game-background);
+    border: 2px solid var(--lines);
+    border-radius: 0.45em;
+}
+
+.game-over {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 20px;
+}
+
+.game-over-score {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.game-over-score img {
+    width: 40px;
+}
+
+.game-over-score .finalCurrent-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-score .current-value {
+    font-size: 1.5em;
+    color: var(--lines)
+}
+
+.game-over-score .finalHigh-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-score .high-value {
+    font-size: 1.5em;
+    color: var(--lines);
+}
+
+.massage img {
+    width: 9em;
+}
+
+.tryAgain_button {
+    border: 1px solid var(--lines);
+    border-radius: 18px;
+    background-color: #92B712;
+    color: #e0e6c8;
+    padding: 7px;
+    margin: 3px;
+}
